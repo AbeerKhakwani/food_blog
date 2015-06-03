@@ -1,0 +1,4 @@
+name = Game Changer
+description = This is an example module that edits the recipe content
+package = Epicodus Examples
+core = 7.x

@@ -595,7 +595,7 @@ h2#site-slogan {
   width:100%;
   position:relative;
   overflow:hidden;
-  /*display: none;*/
+  display: none;
 }
 .featured img {
   max-width:100%;
@@ -616,6 +616,7 @@ h2#site-slogan {
 }
 .featured-text {
   padding:16px 10px 0;
+  display:none;
 }
 .featured-text span {
   font-size:15px;
@@ -630,6 +631,7 @@ h2#site-slogan {
 #controllers {
   padding-top: 7px;
   text-align:center;
+  diplay:hidden;
 }
 #controllers a {
   background-color: #B7B7B7;
@@ -642,9 +644,11 @@ h2#site-slogan {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  diplay:none;
 }
 #controllers a:hover, #controllers a.active {
   background-color:#000;
+  diplay:none;
 }
 
 #breadcrumbs {
@@ -1297,4 +1301,24 @@ border-left: 1px solid; border-right: 1px solid; height: 40px; margin-left: -36p
 
 #forum .name a{
   font-size: 16px;
+}
+span.submitted {
+    display:none;
+}
+
+.content .field-items {
+    display: block;
+}
+
+/*.cookie {
+    display: none;
+}*/
+.node-readmore .first .last a{
+    display:none;
+}
+#panels-ipe-display-panel-context-page-front-page-page-front-page-panel-context-429a3f9b-d4ec-4511-8bc3-b4fc8e92c0bc a img{
+
+    width:100%;
+    height:200px;
+
 }
