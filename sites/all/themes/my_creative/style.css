@@ -635,7 +635,7 @@ h2#site-slogan {
 #controllers {
   padding-top: 7px;
   text-align:center;
-  diplay:hidden;
+  diplay:none;
 }
 #controllers a {
   background-color: #B7B7B7;
@@ -649,6 +649,7 @@ h2#site-slogan {
   -moz-border-radius: 6px;
   border-radius: 6px;
   diplay:none;
+
 }
 #controllers a:hover, #controllers a.active {
   background-color:#000;

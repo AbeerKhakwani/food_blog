@@ -150,7 +150,7 @@
       </div> <!-- .slides -->
 
     </div>
-    <div id="controllers"></div><!-- #controllers -->
+    <!-- <div id="controllers"></div><!-- #controllers -->
     <?php endif; ?>
     <?php endif; ?>
   </div>
