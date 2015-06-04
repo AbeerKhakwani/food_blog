@@ -67,6 +67,17 @@
 <header id="header">
   <div class="top-bg"></div>
   <div class="layout-978">
+    <nav id="navigation" role="navigation">
+      <div id="main-menu">
+        <?php
+          if (module_exists('i18n_menu')) {
+            $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
+          } else {
+            $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+          }
+          print drupal_render($main_menu_tree);
+        ?>
+      </div>
     <hgroup id="logo-wrap">
       <h1 id="site-name">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -104,17 +115,6 @@
     </div>
     <?php endif; ?>
     <div class="row-end"></div>
-    <nav id="navigation" role="navigation">
-      <div id="main-menu">
-        <?php
-          if (module_exists('i18n_menu')) {
-            $main_menu_tree = i18n_menu_translated_tree(variable_get('menu_main_links_source', 'main-menu'));
-          } else {
-            $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
-          }
-          print drupal_render($main_menu_tree);
-        ?>
-      </div>
     </nav>
     <div class="row-end"></div>
     <?php if ($is_front): ?>
